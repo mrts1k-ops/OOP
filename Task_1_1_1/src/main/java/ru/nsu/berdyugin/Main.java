@@ -3,7 +3,7 @@ package ru.nsu.berdyugin;
 import java.util.Arrays;
 
 /**
- * Обьявляем начало функции.
+ * Объявляем начало функции.
  */
 
 public class Main {
@@ -68,7 +68,7 @@ public class Main {
     /**
      * Запускаем программу.
      *
-     * @param args аргументы командной строки (не используются).
+     * @param args аргументы командной строки.
      */
 
     public static void main(String[] args) {

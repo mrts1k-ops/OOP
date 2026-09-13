@@ -201,4 +201,17 @@ class MainTest {
 
         assertArrayEquals(new int[]{9, 3, 4}, array);
     }
+
+    @Test
+    void testMainRuns() {
+        Main.main(new String[]{});
+
+        int[] array = {5, 8, 2, 1, 9};
+
+        Main.heapsort(array);
+
+        int[] expected = {1, 2, 5, 8, 9};
+
+        assertArrayEquals(expected, array);
+    }
 }
