@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class MainTest {
 
     @Test
-    void HeapSort() {
+    void testHeapSort() {
 
         int[] array = {5, 4, 3, 2, 1};
 
@@ -21,7 +21,7 @@ class MainTest {
     }
 
     @Test
-    void ReverseSorted() {
+    void testReverseSorted() {
 
         int[] array = {10, 8, 6, 4, 2};
 
@@ -33,7 +33,7 @@ class MainTest {
     }
 
     @Test
-    void WithDuplicates() {
+    void testWithDuplicates() {
 
         int[] array = {4, 2, 4, 1, 2, 4};
 
@@ -45,7 +45,7 @@ class MainTest {
     }
 
     @Test
-    void NegativeNumbers() {
+    void testNegativeNumbers() {
 
         int[] array = {-5, 3, -1, -10, 7, 0};
 
@@ -57,7 +57,7 @@ class MainTest {
     }
 
     @Test
-    void LongArray() {
+    void testLongArray() {
 
         int[] array = {15, 3, 27, 8, 1, 19, 42, 6, 12, 30, 5, 17, 9, 25, 2, 33, 11, 7, 21, 14};
 
@@ -69,7 +69,7 @@ class MainTest {
     }
 
     @Test
-    void OneElement() {
+    void testOneElement() {
 
         int[] array = {7};
 
@@ -81,7 +81,7 @@ class MainTest {
     }
 
     @Test
-    void TwoElements() {
+    void testTwoElements() {
 
         int[] array = {9, 3};
 
@@ -93,7 +93,7 @@ class MainTest {
     }
 
     @Test
-    void AllEqual() {
+    void testAllEqual() {
 
         int[] array = {5, 5, 5, 5, 5};
 
@@ -105,7 +105,7 @@ class MainTest {
     }
 
     @Test
-    void MixedNumbers() {
+    void testMixedNumbers() {
 
         int[] array = {12, -4, 0, 8, -15, 3};
 
@@ -117,7 +117,7 @@ class MainTest {
     }
 
     @Test
-    void EmptyArray() {
+    void testEmptyArray() {
 
         int[] array = {};
 
@@ -129,7 +129,7 @@ class MainTest {
     }
 
     @Test
-    void OnlyNegativeNumbers() {
+    void testOnlyNegativeNumbers() {
 
         int[] array = {-3, -10, -1, -7, -5};
 
@@ -141,7 +141,7 @@ class MainTest {
     }
 
     @Test
-    void ManyDuplicates() {
+    void testManyDuplicates() {
 
         int[] array = {3, 1, 3, 2, 1, 3, 2, 1, 3, 2};
 
@@ -153,7 +153,7 @@ class MainTest {
     }
 
     @Test
-    void RandomArray() {
+    void testRandomArray() {
 
         Random random = new Random();
 
@@ -171,7 +171,7 @@ class MainTest {
     }
 
     @Test
-    void ExtremeValues() {
+    void testExtremeValues() {
 
         int[] array = {Integer.MAX_VALUE, 0, Integer.MIN_VALUE, 1, -1};
 
@@ -183,7 +183,7 @@ class MainTest {
     }
 
     @Test
-    void HeapifySingleStep() {
+    void testHeapifySingleStep() {
 
         int[] array = {1, 5, 3};
 
@@ -193,7 +193,7 @@ class MainTest {
     }
 
     @Test
-    void HeapifyNoSwapNeeded() {
+    void testHeapifyNoSwapNeeded() {
 
         int[] array = {9, 3, 4};
 
