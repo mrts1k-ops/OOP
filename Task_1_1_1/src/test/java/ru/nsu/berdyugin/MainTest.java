@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class MainTest {
 
     @Test
-    void testHeapSort() {
+    void HeapSort() {
 
         int[] array = {5, 4, 3, 2, 1};
 
@@ -21,7 +21,7 @@ class MainTest {
     }
 
     @Test
-    void testReverseSorted() {
+    void ReverseSorted() {
 
         int[] array = {10, 8, 6, 4, 2};
 
@@ -33,7 +33,7 @@ class MainTest {
     }
 
     @Test
-    void testWithDuplicates() {
+    void WithDuplicates() {
 
         int[] array = {4, 2, 4, 1, 2, 4};
 
@@ -45,7 +45,7 @@ class MainTest {
     }
 
     @Test
-    void testNegativeNumbers() {
+    void NegativeNumbers() {
 
         int[] array = {-5, 3, -1, -10, 7, 0};
 
@@ -57,7 +57,7 @@ class MainTest {
     }
 
     @Test
-    void testLongArray() {
+    void LongArray() {
 
         int[] array = {15, 3, 27, 8, 1, 19, 42, 6, 12, 30, 5, 17, 9, 25, 2, 33, 11, 7, 21, 14};
 
@@ -69,7 +69,7 @@ class MainTest {
     }
 
     @Test
-    void testOneElement() {
+    void OneElement() {
 
         int[] array = {7};
 
@@ -81,7 +81,7 @@ class MainTest {
     }
 
     @Test
-    void testTwoElements() {
+    void TwoElements() {
 
         int[] array = {9, 3};
 
@@ -93,7 +93,7 @@ class MainTest {
     }
 
     @Test
-    void testAllEqual() {
+    void AllEqual() {
 
         int[] array = {5, 5, 5, 5, 5};
 
@@ -105,7 +105,7 @@ class MainTest {
     }
 
     @Test
-    void testMixedNumbers() {
+    void MixedNumbers() {
 
         int[] array = {12, -4, 0, 8, -15, 3};
 
@@ -117,7 +117,7 @@ class MainTest {
     }
 
     @Test
-    void testEmptyArray() {
+    void EmptyArray() {
 
         int[] array = {};
 
@@ -129,7 +129,7 @@ class MainTest {
     }
 
     @Test
-    void testOnlyNegativeNumbers() {
+    void OnlyNegativeNumbers() {
 
         int[] array = {-3, -10, -1, -7, -5};
 
@@ -141,7 +141,7 @@ class MainTest {
     }
 
     @Test
-    void testManyDuplicates() {
+    void ManyDuplicates() {
 
         int[] array = {3, 1, 3, 2, 1, 3, 2, 1, 3, 2};
 
@@ -153,7 +153,7 @@ class MainTest {
     }
 
     @Test
-    void testRandomArray() {
+    void RandomArray() {
 
         Random random = new Random();
 
@@ -171,7 +171,7 @@ class MainTest {
     }
 
     @Test
-    void testExtremeValues() {
+    void ExtremeValues() {
 
         int[] array = {Integer.MAX_VALUE, 0, Integer.MIN_VALUE, 1, -1};
 
@@ -180,6 +180,25 @@ class MainTest {
         int[] expected = {Integer.MIN_VALUE, -1, 0, 1, Integer.MAX_VALUE};
 
         assertArrayEquals(expected, array);
+    }
 
+    @Test
+    void HeapifySingleStep() {
+
+        int[] array = {1, 5, 3};
+
+        Main.heapify(array, array.length, 0);
+
+        assertArrayEquals(new int[]{5, 1, 3}, array);
+    }
+
+    @Test
+    void HeapifyNoSwapNeeded() {
+
+        int[] array = {9, 3, 4};
+
+        Main.heapify(array, array.length, 0);
+
+        assertArrayEquals(new int[]{9, 3, 4}, array);
     }
 }
