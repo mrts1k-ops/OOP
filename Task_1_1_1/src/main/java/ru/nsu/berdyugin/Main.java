@@ -16,7 +16,7 @@ public class Main {
      * @param i индекс корня поддерева, для которого восстанавливается свойство кучи.
      */
 
-    static void heapify(int[] a, int n, int i) { // Восстанавливаем свойства кучи
+    public static void heapify(int[] a, int n, int i) { // Восстанавливаем свойства кучи
         int largest = i;
         int l = 2 * i + 1; // Находим индекс левого и правого потомка
         int r = 2 * i + 2;
@@ -46,7 +46,7 @@ public class Main {
      * @param a массив, который необходимо отсортировать; изменяется на месте.
      */
 
-    static void heapsort(int[] a) { // Сортирует массив пирамидальной сортировки
+    public static void heapsort(int[] a) { // Сортирует массив пирамидальной сортировки
         int n = a.length;
 
         // Строим максимальную кучу
@@ -71,7 +71,7 @@ public class Main {
      * @param args аргументы командной строки (не используются).
      */
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         int[] array = {5, 8, 2, 1, 9}; // Создаём исходный массив
         heapsort(array); // Сортируем массив
 
