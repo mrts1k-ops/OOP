@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.nsu.berdyugin.MainTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-09-16T13:46:15.384Z" hostname="TSIK" time="0.161">
+  <properties/>
+  <testcase name="negativeNumbers()" classname="ru.nsu.berdyugin.MainTest" time="0.045"/>
+  <testcase name="onlyNegativeNumbers()" classname="ru.nsu.berdyugin.MainTest" time="0.007"/>
+  <testcase name="heapifySingleStep()" classname="ru.nsu.berdyugin.MainTest" time="0.002"/>
+  <testcase name="oneElement()" classname="ru.nsu.berdyugin.MainTest" time="0.002"/>
+  <testcase name="heapSort()" classname="ru.nsu.berdyugin.MainTest" time="0.002"/>
+  <testcase name="emptyArray()" classname="ru.nsu.berdyugin.MainTest" time="0.002"/>
+  <testcase name="randomArray()" classname="ru.nsu.berdyugin.MainTest" time="0.006"/>
+  <testcase name="mixedNumbers()" classname="ru.nsu.berdyugin.MainTest" time="0.004"/>
+  <testcase name="withDuplicates()" classname="ru.nsu.berdyugin.MainTest" time="0.003"/>
+  <testcase name="mainRuns()" classname="ru.nsu.berdyugin.MainTest" time="0.013"/>
+  <testcase name="heapifyNoSwapNeeded()" classname="ru.nsu.berdyugin.MainTest" time="0.002"/>
+  <testcase name="longArray()" classname="ru.nsu.berdyugin.MainTest" time="0.003"/>
+  <testcase name="extremeValues()" classname="ru.nsu.berdyugin.MainTest" time="0.004"/>
+  <testcase name="twoElements()" classname="ru.nsu.berdyugin.MainTest" time="0.002"/>
+  <testcase name="manyDuplicates()" classname="ru.nsu.berdyugin.MainTest" time="0.004"/>
+  <testcase name="reverseSorted()" classname="ru.nsu.berdyugin.MainTest" time="0.004"/>
+  <testcase name="allEqual()" classname="ru.nsu.berdyugin.MainTest" time="0.003"/>
+  <system-out><![CDATA[[1, 2, 5, 8, 9]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

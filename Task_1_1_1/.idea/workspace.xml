@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="082c377b-a8e0-45b4-8b77-7da64f993b76" name="Changes" comment="add_de">
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Dealer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Deck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Hand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Rank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/Suit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task_1_2_1/src/main/java/ru/nsu/berdyugin/UserInput.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mrts1k-ops&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mrts1k-ops/OOP.git&quot;,
+    &quot;accountId&quot;: &quot;7680b075-40b5-4a0f-aa46-2da284c188ba&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JGF2dgUlyNQzEnYC3iKCq05s47" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.MainTest.executor": "Run",
+    "Gradle.Task_1_1_1 [:ru.nsu.berdyugin.Main.main()].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\Misha\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "Task__1__1__1",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Misha/projects/University/OOP/Task_1_1_1/src/main/java/ru/nsu/berdyugin/Main.java",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.nsu.berdyugin" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="082c377b-a8e0-45b4-8b77-7da64f993b76" name="Changes" comment="" />
+      <created>1789279292267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789279292267</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="add_test" />
+    <MESSAGE value="add_shellscript" />
+    <MESSAGE value="add_public" />
+    <MESSAGE value="add_two_tests" />
+    <MESSAGE value="add_tеsts" />
+    <MESSAGE value="add_de" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_de" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
