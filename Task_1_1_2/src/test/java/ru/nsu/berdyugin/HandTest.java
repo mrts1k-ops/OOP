@@ -203,14 +203,14 @@ class HandTest {
     @Test
     void describeShowsAllCardsAndScore() {
         Hand hand = handOf(new Card(Suit.SPADES, Rank.QUEEN), new Card(Suit.HEARTS, Rank.THREE));
-        assertEquals("[Пиковая дама (10), Тройка Червы (3)] ⇒ 13", hand.describe());
+        assertEquals("[Пиковая дама (10), Тройка Червы (3)] \u21D2 13", hand.describe());
     }
 
 
     @Test
     void describeShowsAceAsEleven() {
         Hand hand = handOf(new Card(Suit.CLUBS, Rank.ACE), new Card(Suit.CLUBS, Rank.THREE));
-        assertEquals("[Туз Трефы (11), Тройка Трефы (3)] ⇒ 14", hand.describe());
+        aassertEquals("[Туз Трефы (11), Тройка Трефы (3)] \u21D2 14", hand.describe());
     }
 
 
@@ -220,14 +220,14 @@ class HandTest {
                 new Card(Suit.CLUBS, Rank.ACE),
                 new Card(Suit.CLUBS, Rank.THREE),
                 new Card(Suit.SPADES, Rank.TEN));
-        assertEquals("[Туз Трефы (1), Тройка Трефы (3), Десятка Пики (10)] ⇒ 14", hand.describe());
+        assertEquals("[Туз Трефы (1), Тройка Трефы (3), Десятка Пики (10)] \u21D2 14", hand.describe());
     }
 
 
     @Test
     void describeWithTwoAcesShowsOneAsOne() {
         Hand hand = handOf(new Card(Suit.CLUBS, Rank.ACE), new Card(Suit.HEARTS, Rank.ACE));
-        assertEquals("[Туз Трефы (1), Туз Червы (11)] ⇒ 12", hand.describe());
+        assertEquals("[Туз Трефы (1), Туз Червы (11)] \u21D2 12", hand.describe());
     }
 
 

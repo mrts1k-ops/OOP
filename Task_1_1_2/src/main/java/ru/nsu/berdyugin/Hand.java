@@ -109,7 +109,7 @@ public class Hand {
 
 
     /**
-     *Показывает все карты и сумму
+     * Показывает все карты и сумму: "[Пиковая дама (10), Тройка Червы (3)] \u21D2 13".
      *
      * @return строка с картами и суммой.
      */
@@ -134,7 +134,7 @@ public class Hand {
             }
             result += card.getName() + " (" + value + ")";
         }
-        result += "] => " + getScore();
+        result += "] \u21D2 " + getScore();
         return result;
     }
 
