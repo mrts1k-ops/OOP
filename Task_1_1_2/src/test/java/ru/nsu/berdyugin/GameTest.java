@@ -76,8 +76,8 @@ class GameTest {
         boolean dealerBlackjack = round.contains("У дилера блэкджек!");
         boolean bothBlackjack = round.contains("У обоих блэкджек!");
         boolean dealerTurn = round.contains("Ход дилера");
-        int playerScore = lastNumber(round, "Ваши карты: .*\u21D2 (\\d+)");
-        int dealerScore = lastNumber(round, "Карты дилера: .*\u21D2 (\\d+)");
+        int playerScore = lastNumber(round, "Ваши карты: .*⇒ (\\d+)");
+        int dealerScore = lastNumber(round, "Карты дилера: .*⇒ (\\d+)");
 
         if (bothBlackjack) {
             assertTrue(draw); // У обоих блэкджек - ничья
@@ -177,7 +177,7 @@ class GameTest {
 
 
     @Test
-    void manyRoundsInARow() {
+    void manyRoundsInRow() {
         // Пары "стоп" и "играть ещё"; в конце "стоп" и "выйти"
         String input = "0\n1\n".repeat(30) + "0\n0\n";
         for (int i = 0; i < 30; i++) {

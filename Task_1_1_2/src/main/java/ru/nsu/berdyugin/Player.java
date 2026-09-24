@@ -25,7 +25,7 @@ public class Player extends Participant {
 
     @Override
     public boolean wantsToTake() {
-        return input.askYesNo("\nВведите \u201C1\u201D, чтобы взять карту, "
-                + "и \u201C0\u201D, чтобы остановиться...");
+        return input.askYesNo("\nВведите “1”, чтобы взять карту, "
+                + "и “0”, чтобы остановиться...");
     }
 }
