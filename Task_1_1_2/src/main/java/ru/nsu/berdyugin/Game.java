@@ -34,7 +34,7 @@ public class Game {
      */
 
     public void start() {
-        System.out.println("Доброе пожаловать!");
+        System.out.println("Добро пожаловать в Блэкджек!");
 
         boolean playAgain = true;
         while (playAgain) {
@@ -200,7 +200,7 @@ public class Game {
 
     private void dealerWinsRound() {
         dealerWins++;
-        System.out.println("\nВы выиграли раунд! " + scoreText());
+        System.out.println("\nВы проиграли раунд! " + scoreText());
     }
 
     /**
@@ -219,11 +219,11 @@ public class Game {
      */
 
     private String scoreText() {
-        String text = "Счёт " + playerWins + ":" + dealerWins;
+        String text = "Счет " + playerWins + ":" + dealerWins;
         if (playerWins > dealerWins) {
             text += " в вашу пользу.";
         } else if (dealerWins > playerWins) {
-            text += " в пользу дилераю.";
+            text += " в пользу дилера.";
         } else {
             text += ".";
         }
