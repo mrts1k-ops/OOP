@@ -14,6 +14,11 @@ import org.junit.jupiter.api.Test;
 class MainTest {
 
     @Test
+    void constructorIsAccessible() {
+        new Main();
+    }
+
+    @Test
     void mainRuns() {
         InputStream oldIn = System.in;
         PrintStream oldOut = System.out;
