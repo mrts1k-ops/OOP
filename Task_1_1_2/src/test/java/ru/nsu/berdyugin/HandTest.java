@@ -220,7 +220,8 @@ class HandTest {
                 new Card(Suit.CLUBS, Rank.ACE),
                 new Card(Suit.CLUBS, Rank.THREE),
                 new Card(Suit.SPADES, Rank.TEN));
-        assertEquals("[Туз Трефы (1), Тройка Трефы (3), Десятка Пики (10)] \u21D2 14", hand.describe());
+        assertEquals(
+                "[Туз Трефы (1), Тройка Трефы (3), Десятка Пики (10)] \u21D2 14", hand.describe());
     }
 
 

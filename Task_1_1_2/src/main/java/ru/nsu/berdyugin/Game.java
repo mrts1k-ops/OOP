@@ -39,7 +39,8 @@ public class Game {
         boolean playAgain = true;
         while (playAgain) {
             playRound();
-            playAgain = input.askYesNo("\nВведите \u201C1\u201D, чтобы сыграть ещё раунд, и \u201C0\u201D, чтобы выйти...");
+            playAgain = input.askYesNo("\nВведите \u201C1\u201D, чтобы сыграть ещё раунд, "
+                    + "и \u201C0\u201D, чтобы выйти...");
         }
     }
 
