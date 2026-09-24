@@ -119,7 +119,7 @@ public class Hand {
         int acesAsOne = (sumWithAcesAsEleven() - getScore()) / 10;
 
         String result = "[";
-        for (int i = 0; i < cards.size(); i++){
+        for (int i = 0; i < cards.size(); i++) {
             Card card = cards.get(i);
             int value = card.getValue();
 
