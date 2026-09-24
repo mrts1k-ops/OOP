@@ -134,7 +134,7 @@ public class Hand {
             }
             result += card.getName() + " (" + value + ")";
         }
-        result += "] \u21D2 " + getScore();
+        result += "] ⇒ " + getScore();
         return result;
     }
 
