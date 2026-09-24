@@ -8,7 +8,8 @@ import java.util.Scanner;
  */
 
 public class Game {
-    private final UserInput input = new UserInput(new Scanner(System.in)); //Вводные данные и консоли.
+    //Вводные данные и консоли.
+    private final UserInput input = new UserInput(new Scanner(System.in));
     private final Deck deck; // Колода
     private final Player player = new Player(input); //Игрок
     private final Dealer dealer = new Dealer(); // Дилер
