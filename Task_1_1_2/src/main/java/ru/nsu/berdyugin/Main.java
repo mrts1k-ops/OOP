@@ -7,7 +7,7 @@ package ru.nsu.berdyugin;
 public class Main {
 
     /**
-     * Запускаем программу
+     * Запускаем программу.
      *
      * @param args аргументы командой строки.
      */
