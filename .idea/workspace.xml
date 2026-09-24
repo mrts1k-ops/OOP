@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="336c33ea-411f-4a05-b6bb-e615de63b6c8" name="Changes" comment="" />
+    <list default="true" id="336c33ea-411f-4a05-b6bb-e615de63b6c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/app.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/app.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/allclasses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/element-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-bg_glass_65_dadada_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jquery-3.5.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jquery-3.5.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jquery-ui.structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jquery-ui.structure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jquery-ui.structure.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jszip/dist/jszip.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jszip/dist/jszip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/jquery/jszip/dist/jszip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/jquery/jszip/dist/jszip.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/package-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/resources/glass.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/resources/glass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/resources/x.png" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/resources/x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Card.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Dealer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Dealer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Deck.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Deck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Hand.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Hand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Participant.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Participant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Player.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Player.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Rank.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Rank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/Suit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/Suit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/UserInput.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/UserInput.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/ru/nsu/berdyugin/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/ru/nsu/berdyugin/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/docs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/docs/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Rank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/Suit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/main/java/ru/nsu/berdyugin/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/ru/nsu/berdyugin/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/DealerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/DeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/HandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_1/src/test/java/ru/nsu/berdyugin/UserInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/ru/nsu/berdyugin/UserInputTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,14 +128,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "#1 on Task__1__1__1",
+    "git-widget-placeholder": "#2 on Task__1__1__2",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Misha/projects/University/OOP",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -48,6 +146,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Misha\projects\University\OOP" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OOP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
