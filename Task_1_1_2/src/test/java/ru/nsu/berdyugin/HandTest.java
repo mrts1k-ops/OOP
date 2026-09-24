@@ -210,7 +210,7 @@ class HandTest {
     @Test
     void describeShowsAceAsEleven() {
         Hand hand = handOf(new Card(Suit.CLUBS, Rank.ACE), new Card(Suit.CLUBS, Rank.THREE));
-        aassertEquals("[Туз Трефы (11), Тройка Трефы (3)] \u21D2 14", hand.describe());
+        assertEquals("[Туз Трефы (11), Тройка Трефы (3)] \u21D2 14", hand.describe());
     }
 
 

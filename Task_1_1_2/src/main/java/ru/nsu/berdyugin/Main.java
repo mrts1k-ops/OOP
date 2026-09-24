@@ -12,7 +12,7 @@ public class Main {
      * @param args аргументы командой строки.
      */
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Game game = new Game(1); //Играем одной колодой
         game.start();
     }
