@@ -13,7 +13,8 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        Game game = new Game(1); //Играем одной колодой
+        Deck deck = new Deck(1); // Одна колода
+        Game game = new Game(deck); //Играем одной колодой
         game.start();
     }
 }

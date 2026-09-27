@@ -19,13 +19,13 @@ public class Game {
 
 
     /**
-     * Создаёт игру.
+     * Создаёт игру с уже готовой колодой.
      *
-     * @param decksCount количество колод по 52 карты.
+     * @param deck колода, которой играет эта игра.
      */
 
-    public Game(int decksCount) {
-        this.deck = new Deck(decksCount);
+    public Game(Deck deck) {
+        this.deck = deck;
     }
 
 
@@ -127,7 +127,7 @@ public class Game {
     private boolean playerTurn() {
         System.out.println("\nВаш ход\n-------");
 
-        while (player.wantsToTake()) {
+        while (player.getHand().getScore() < 21 && player.wantsToTake()) {
             Card card = deck.draw();
             player.getHand().add(card);
             System.out.println("Вы открыли карту " + card);

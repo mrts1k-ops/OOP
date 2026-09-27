@@ -50,150 +50,177 @@ class GameTest {
     }
 
 
-    // Находит последнее число в тексте по шаблону (или -1, если не нашлось)
-    private int lastNumber(String text, String regex) {
-        Matcher matcher = Pattern.compile(regex).matcher(text);
-        int result = -1;
-        while (matcher.find()) {
-            result = Integer.parseInt(matcher.group(1));
-        }
-        return result;
-    }
-
-
-    // Проверяет, что один раунд сыгран по правилам
-    private void checkRound(String round) {
-        boolean won = round.contains("Вы выиграли раунд!");
-        boolean lost = round.contains("Вы проиграли раунд!");
-        boolean draw = round.contains("Ничья!");
-
-
-        // В раунде ровно один результат
-        assertEquals(1, count(round, "Вы выиграли раунд!") + count(round, "Вы проиграли раунд!")
-                + count(round, "Ничья!"));
-
-        boolean playerBlackjack = round.contains("У вас блэкджек!");
-        boolean dealerBlackjack = round.contains("У дилера блэкджек!");
-        boolean bothBlackjack = round.contains("У обоих блэкджек!");
-        boolean dealerTurn = round.contains("Ход дилера");
-        int playerScore = lastNumber(round, "Ваши карты: .*⇒ (\\d+)");
-        int dealerScore = lastNumber(round, "Карты дилера: .*⇒ (\\d+)");
-
-        if (bothBlackjack) {
-            assertTrue(draw); // У обоих блэкджек - ничья
-        } else if (playerBlackjack) {
-            assertTrue(won); // Блэкджек делает победителем
-        } else if (dealerBlackjack) {
-            assertTrue(lost);
-        } else if (playerScore > 21) {
-            assertTrue(lost); // Перебор игрока - сразу проигрыш
-            assertFalse(dealerTurn); // Дилер после этого не ходит
-        } else {
-            assertTrue(dealerTurn);
-            assertTrue(dealerScore >= 17); // Дилер берёт карты минимум до 17
-            if (dealerScore > 21) {
-                assertTrue(won); // Перебор дилера - победа игрока
-            } else if (playerScore > dealerScore) {
-                assertTrue(won);
-            } else if (playerScore < dealerScore) {
-                assertTrue(lost);
-            } else {
-                assertTrue(draw);
-            }
-        }
-    }
-
-    // Проверяет всю игру: каждый раунд и итоговый счёт
-    private void checkGame(String output) {
-        String[] rounds = output.split("Раунд \\d+");
-        assertTrue(rounds.length >= 2); // Хотя бы один раунд сыгран
-
-        for (int i = 1; i < rounds.length; i++) {
-            checkRound(rounds[i]);
-        }
-
-
-        // Последний напечатанный счёт должен совпадать с реальным числом побед
-        int wins = count(output, "Вы выиграли раунд!");
-        int losses = count(output, "Вы проиграли раунд!");
-        Matcher matcher = Pattern.compile("Счет (\\d+):(\\d+)").matcher(output);
-        int shownWins = -1;
-        int shownLosses = -1;
-        while (matcher.find()) {
-            shownWins = Integer.parseInt(matcher.group(1));
-            shownLosses = Integer.parseInt(matcher.group(2));
-        }
-        assertEquals(wins, shownWins);
-        assertEquals(losses, shownLosses);
-    }
-
-
-    // Один раунд: игрок сразу останавливается, потом выходит
-    private String playOneRound(int decks) {
-        return run("0\n0\n", () -> new Game(decks).start());
+    // Создаёт колоду, где карты выходят в заданном порядке: первая в списке будет взята первой
+    private Deck deckWith(Card... cardsInDrawOrder) {
+        List<Card> cards = new ArrayList<>(Arrays.asList(cardsInDrawOrder));
+        Collections.reverse(cards); // draw() берёт последнюю карту списка
+        return new Deck(cards);
     }
 
 
     @Test
     void gameStarts() {
-        String output = playOneRound(1);
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.NINE),
+                new Card(Suit.HEARTS, Rank.TEN),
+                new Card(Suit.CLUBS, Rank.SEVEN),
+                new Card(Suit.DIAMONDS, Rank.NINE));
+        String output = run("0\n0\n", () -> new Game(deck).start());
         assertTrue(output.contains("Добро пожаловать в Блэкджек!"));
         assertTrue(output.contains("Раунд 1"));
         assertTrue(output.contains("Дилер раздал карты"));
     }
 
-
     @Test
     void dealerCardIsHiddenAtStart() {
-        String output = playOneRound(1);
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.NINE),
+                new Card(Suit.HEARTS, Rank.TEN),
+                new Card(Suit.CLUBS, Rank.SEVEN),
+                new Card(Suit.DIAMONDS, Rank.NINE));
+        String output = run("0\n0\n", () -> new Game(deck).start());
         assertTrue(output.contains("<закрытая карта>"));
     }
 
-
     @Test
-    void firstScoreIsCorrect() {
-        String output = playOneRound(1);
-        boolean correct = output.contains("Счет 1:0 в вашу пользу.")
-                || output.contains("Счет 0:1 в пользу дилера.")
-                || output.contains("Счет 0:0.");
-        assertTrue(correct);
+    void playerBlackjackWinsImmediately() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.ACE),
+                new Card(Suit.HEARTS, Rank.KING),
+                new Card(Suit.SPADES, Rank.KING),
+                new Card(Suit.HEARTS, Rank.NINE));
+        String output = run("0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("У вас блэкджек!"));
+        assertTrue(output.contains("Вы выиграли раунд! Счет 1:0 в вашу пользу."));
     }
 
-
     @Test
-    void manySingleRoundsFollowRules() {
-        for (int i = 0; i < 300; i++) {
-            checkGame(playOneRound(1));
-        }
+    void dealerBlackjackWinsImmediately() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.TEN),
+                new Card(Suit.HEARTS, Rank.ACE),
+                new Card(Suit.CLUBS, Rank.NINE),
+                new Card(Suit.DIAMONDS, Rank.KING));
+        String output = run("0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("У дилера блэкджек!"));
+        assertTrue(output.contains("Вы проиграли раунд! Счет 0:1 в пользу дилера."));
     }
 
-
     @Test
-    void severalDecksFollowRules() {
-        for (int i = 0; i < 100; i++) {
-            checkGame(playOneRound(4));
-        }
+    void bothBlackjackIsDraw() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.ACE),
+                new Card(Suit.HEARTS, Rank.ACE),
+                new Card(Suit.SPADES, Rank.KING),
+                new Card(Suit.HEARTS, Rank.KING));
+        String output = run("0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("У обоих блэкджек!"));
+        assertTrue(output.contains("Ничья! Счет 0:0."));
     }
 
-
     @Test
-    void manyRoundsInRow() {
-        // Пары "стоп" и "играть ещё"; в конце "стоп" и "выйти"
-        String input = "0\n1\n".repeat(30) + "0\n0\n";
-        for (int i = 0; i < 30; i++) {
-            String output = run(input, () -> new Game(1).start());
-            checkGame(output);
-        }
+    void playerBustLosesWithoutDealerTurn() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.TEN),
+                new Card(Suit.HEARTS, Rank.SEVEN),
+                new Card(Suit.CLUBS, Rank.SIX),
+                new Card(Suit.DIAMONDS, Rank.EIGHT),
+                new Card(Suit.CLUBS, Rank.KING)); // добор игрока - перебор
+        String output = run("1\n0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("Вы проиграли раунд!"));
+        assertFalse(output.contains("Ход дилера"));
     }
 
+    @Test
+    void playerAutoStopsAtTwentyOne() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.NINE),
+                new Card(Suit.HEARTS, Rank.TEN),
+                new Card(Suit.CLUBS, Rank.FIVE),
+                new Card(Suit.DIAMONDS, Rank.SIX),
+                new Card(Suit.SPADES, Rank.SEVEN), // добор игрока: 9 + 5 + 7 = 21
+                new Card(Suit.CLUBS, Rank.TEN)); // добор дилера - перебор
+        String output = run("1\n0\n", () -> new Game(deck).start());
+        assertEquals(1, count(output, "чтобы взять карту")); // вопрос задан только один раз
+        assertTrue(output.contains("Вы выиграли раунд!"));
+    }
 
     @Test
-    void playerHitsUntilBust() {
-        // Игрок много раз подряд берёт карту, значит, часто будет перебор
-        String input = "1\n".repeat(15) + "0\n0\n";
-        for (int i = 0; i < 100; i++) {
-            String output = run(input, () -> new Game(1).start());
-            checkGame(output);
-        }
+    void dealerBustPlayerWins() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.KING),
+                new Card(Suit.HEARTS, Rank.TEN),
+                new Card(Suit.CLUBS, Rank.SEVEN),
+                new Card(Suit.DIAMONDS, Rank.SIX),
+                new Card(Suit.HEARTS, Rank.KING)); // добор дилера - перебор
+        String output = run("0\n0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("Ход дилера"));
+        assertTrue(output.contains("Вы выиграли раунд!"));
+    }
+
+    @Test
+    void playerHigherScoreWins() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.KING),
+                new Card(Suit.HEARTS, Rank.TEN),
+                new Card(Suit.CLUBS, Rank.EIGHT),
+                new Card(Suit.DIAMONDS, Rank.SEVEN));
+        String output = run("0\n0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("Вы выиграли раунд!"));
+    }
+
+    @Test
+    void dealerHigherScoreWins() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.NINE),
+                new Card(Suit.HEARTS, Rank.TEN),
+                new Card(Suit.CLUBS, Rank.SEVEN),
+                new Card(Suit.DIAMONDS, Rank.NINE));
+        String output = run("0\n0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("Вы проиграли раунд!"));
+    }
+
+    @Test
+    void equalScoresIsDraw() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.TEN),
+                new Card(Suit.HEARTS, Rank.KING),
+                new Card(Suit.CLUBS, Rank.NINE),
+                new Card(Suit.DIAMONDS, Rank.NINE));
+        String output = run("0\n0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("Ничья!"));
+    }
+
+    @Test
+    void dealerHitsMultipleTimesBelowSeventeen() {
+        Deck deck = deckWith(
+                new Card(Suit.SPADES, Rank.KING),
+                new Card(Suit.HEARTS, Rank.TWO),
+                new Card(Suit.CLUBS, Rank.KING),
+                new Card(Suit.DIAMONDS, Rank.THREE),
+                new Card(Suit.SPADES, Rank.FOUR), // 5 -> 9, ещё меньше 17
+                new Card(Suit.HEARTS, Rank.TEN)); // 9 -> 19, останавливается
+        String output = run("0\n0\n", () -> new Game(deck).start());
+        assertEquals(2, count(output, "Дилер открывает карту"));
+        assertTrue(output.contains("Вы выиграли раунд!"));
+    }
+
+    @Test
+    void scoreAccumulatesAcrossTwoRounds() {
+        Deck deck = deckWith(
+                // Раунд 1: блэкджек игрока - 1:0
+                new Card(Suit.SPADES, Rank.ACE),
+                new Card(Suit.HEARTS, Rank.KING),
+                new Card(Suit.SPADES, Rank.KING),
+                new Card(Suit.HEARTS, Rank.NINE),
+
+                // Раунд 2: перебор игрока - 1:1
+                new Card(Suit.SPADES, Rank.TEN),
+                new Card(Suit.HEARTS, Rank.SEVEN),
+                new Card(Suit.CLUBS, Rank.SIX),
+                new Card(Suit.DIAMONDS, Rank.EIGHT),
+                new Card(Suit.CLUBS, Rank.KING));
+        String output = run("1\n1\n0\n", () -> new Game(deck).start());
+        assertTrue(output.contains("Счет 1:1."));
     }
 }
