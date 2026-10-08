@@ -7,8 +7,15 @@ package ru.nsu.berdyugin;
 
 public class Main {
 
+
+    /**
+     * Создает пример выражения (3+(2*x)),
+     * строит и печатает его производную,
+     * вычисляет значение выражения при x = 10.
+     */
+
     public static void main(String[] args) {
-        
+
         // (3+(2*x))
         Expression e = new Add(new Number(3), new Mul(new Number(2), new Variable("x")));
         e.print();
