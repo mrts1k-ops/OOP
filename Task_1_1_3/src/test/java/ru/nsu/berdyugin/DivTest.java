@@ -2,6 +2,7 @@ package ru.nsu.berdyugin;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.HashMap;
 import org.junit.jupiter.api.Test;
@@ -33,5 +34,11 @@ class DivTest {
         Expression div = new Div(new Variable("x"), new Number(2));
         Expression derivative = div.derivative("x");
         assertEquals("(((1*2)-(x*0))/(2*2))", ExpressionTestUtils.printToString(derivative));
+    }
+
+    @Test
+    void divisionByZeroThrows() {
+        Expression div = new Div(new Number(5), new Number(0));
+        assertThrows(ArithmeticException.class, () -> div.evaluate(new HashMap<>()));
     }
 }

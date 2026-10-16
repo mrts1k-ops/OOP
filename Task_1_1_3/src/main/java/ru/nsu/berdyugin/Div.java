@@ -46,6 +46,13 @@ public class Div extends Expression {
 
     @Override
     public int evaluate(Map<String, Integer> values) {
-        return left.evaluate(values) / right.evaluate(values);
+        int leftValue = left.evaluate(values);
+        int rightValue = right.evaluate(values);
+
+        if (rightValue == 0) {
+            throw new ArithmeticException("Деление на ноль");
+        }
+
+        return leftValue / rightValue;
     }
 }
