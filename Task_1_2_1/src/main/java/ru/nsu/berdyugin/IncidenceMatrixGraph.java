@@ -15,7 +15,6 @@ public class IncidenceMatrixGraph implements Graph {
     private final List<Integer> vertices = new ArrayList<>();
     private final List<List<Integer>> incidence = new ArrayList<>();
 
-
     @Override
     public void addVertex(int vertex) {
         if (vertices.contains(vertex)) {
@@ -34,6 +33,7 @@ public class IncidenceMatrixGraph implements Graph {
     public void removeVertex(int vertex) {
         int index = indexOf(vertex);
 
+        // Убираем все рёбра которые касаются этой вершины
         List<Integer> row = incidence.get(index);
         List<Integer> edgesToRemove = new ArrayList<>();
         for (int e = 0; e < row.size(); e++) {
@@ -54,6 +54,10 @@ public class IncidenceMatrixGraph implements Graph {
     public void addEdge(int from, int to) {
         int fromIndex = indexOf(from);
         int toIndex = indexOf(to);
+
+        if (hasEdge(fromIndex, toIndex)) {
+            return;
+        }
 
         for (List<Integer> row : incidence) {
             row.add(0);
@@ -76,6 +80,18 @@ public class IncidenceMatrixGraph implements Graph {
                 return;
             }
         }
+    }
+
+    private boolean hasEdge(int fromIndex, int toIndex) {
+        int edgeCount = incidence.isEmpty() ? 0 : incidence.get(0).size();
+        for (int e = 0; e < edgeCount; e++) {
+            boolean leavesFrom = incidence.get(fromIndex).get(e) == -1;
+            boolean entersTo = incidence.get(toIndex).get(e) == 1;
+            if (leavesFrom && entersTo) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
