@@ -11,7 +11,7 @@ import java.util.List;
  * (В столбце ребра стоит -1 у вершины, откуда оно выходит, 1 - у вершины)
  */
 
-public class IncidenceMatrixGraph implements Graph {
+public class IncidenceMatrixGraph extends AbstractGraph {
     private final List<Integer> vertices = new ArrayList<>();
     private final List<List<Integer>> incidence = new ArrayList<>();
 
@@ -133,20 +133,5 @@ public class IncidenceMatrixGraph implements Graph {
             throw new IllegalArgumentException("Вершины " + vertex + " нет в графе");
         }
         return index;
-    }
-
-    @Override
-    public boolean equals(Object other) {
-        return GraphUtils.equals(this, other);
-    }
-
-    @Override
-    public int hashCode() {
-        return GraphUtils.hashCode(this);
-    }
-
-    @Override
-    public String toString() {
-        return GraphUtils.toString(this);
     }
 }

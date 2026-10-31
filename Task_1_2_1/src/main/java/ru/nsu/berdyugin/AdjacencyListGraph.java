@@ -13,7 +13,7 @@ import java.util.Map;
  * (у каждой вершины есть список вершин, в которые из неё есть ребро).
  */
 
-public class AdjacencyListGraph implements Graph {
+public class AdjacencyListGraph extends AbstractGraph {
     private final Map<Integer, List<Integer>> adjacency = new HashMap<>();
 
     @Override
@@ -68,21 +68,5 @@ public class AdjacencyListGraph implements Graph {
         if (!adjacency.containsKey(vertex)) {
             throw new IllegalArgumentException("Вершины " + vertex + " нет в графе");
         }
-    }
-
-
-    @Override
-    public boolean equals(Object other) {
-        return GraphUtils.equals(this, other);
-    }
-
-    @Override
-    public int hashCode() {
-        return GraphUtils.hashCode(this);
-    }
-
-    @Override
-    public String toString() {
-        return GraphUtils.toString(this);
     }
 }

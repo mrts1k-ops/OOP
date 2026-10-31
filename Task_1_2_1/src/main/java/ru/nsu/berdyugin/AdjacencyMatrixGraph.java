@@ -11,7 +11,7 @@ import java.util.List;
  * (квадратная таблица true/false).
  */
 
-public class AdjacencyMatrixGraph implements Graph {
+public class AdjacencyMatrixGraph extends AbstractGraph {
     private final List<Integer> vertices = new ArrayList<>();
     private final List<List<Boolean>> matrix = new ArrayList<>();
 
@@ -77,20 +77,5 @@ public class AdjacencyMatrixGraph implements Graph {
             throw new IllegalArgumentException("Вершины " + vertex + " нет в графе");
         }
         return index;
-    }
-
-    @Override
-    public boolean equals(Object other) {
-        return GraphUtils.equals(this, other);
-    }
-
-    @Override
-    public int hashCode() {
-        return GraphUtils.hashCode(this);
-    }
-
-    @Override
-    public String toString() {
-        return GraphUtils.toString(this);
     }
 }
