@@ -81,7 +81,7 @@ public class HashTable<K, V> implements Iterable<HashTable.Entry<K, V>> {
 
 
     /**
-     * Добавляет пару но если такой ключ уже есть,
+     * Добавляет пару, но если такой ключ уже есть,
      * его значение заменяется на новое.
      *
      * @param key ключ.
@@ -209,7 +209,7 @@ public class HashTable<K, V> implements Iterable<HashTable.Entry<K, V>> {
 
 
     /**
-     * Возвращает итератор по парам <ключ, значение> (если во время обхода
+     * Возвращает итератор по парам "ключ, значение" (если во время обхода
      * добавить или удалить пару, следующий вызов next бросит
      * ConcurrentModificationException).
      *
